@@ -1,17 +1,31 @@
 body {
   background-color: darkseagreen;
 }
-h1 {
+
+}
+header {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+h1{
   color: darkgreen;
+  font-size: 40px;
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: solid;
+  border-left-style: none;
+  padding: 5px;
+  font-family: Arial, sans-serif;
 }
-p {
-  border: 2px solid;
-  color: darkgreen
+
+h2{
+	color: darkgreen;
+	font-size: 30px;
+	padding: 5px;
+	font-family: Arial, sans-serif;
 }
-title {
-  color: darkgreen;
-}
-btn {
+.btn {
   border: 1px solid;
   color: darkslategrey;
   background-color: palegreen;
@@ -22,4 +36,25 @@ btn {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  font-weight: bold
+} 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: darkslategrey;
+}
+
+li {
+  float: left;
+}
+li a:hover {
+  background-color: Cornsilk;
+}
+
+p {
+	padding: 10px 50px 10px 50px;
+	font-family: Arial, sans-serif;
+	font-size: 18px;
 }
