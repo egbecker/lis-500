@@ -1,2 +1,1 @@
-# lis-500
-LIS500 DISC Group 6 - Project #2
+<!--- This code was written by Liz Becker and David Moore for LIS500 in the UW-Madison iSchool ---!>
