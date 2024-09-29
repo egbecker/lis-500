@@ -1,14 +1,13 @@
 body {
-  background-color: darkseagreen;
+  background-color: #CCFFFF;
 }
 
-}
 header {
   text-align: center;
   font-family: Arial, sans-serif;
 }
 
-h1{
+h1 {
   color: darkgreen;
   font-size: 40px;
   border-top-style: none;
@@ -19,16 +18,17 @@ h1{
   font-family: Arial, sans-serif;
 }
 
-h2{
-	color: darkgreen;
-	font-size: 30px;
-	padding: 5px;
-	font-family: Arial, sans-serif;
+h2 {
+  color: darkgreen;
+  font-size: 30px;
+  padding: 5px;
+  font-family: Arial, sans-serif;
 }
+
 .btn {
   border: 1px solid;
-  color: darkslategrey;
-  background-color: palegreen;
+  color: #003300;
+  background-color: cornsilk;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -36,25 +36,52 @@ h2{
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  font-weight: bold
-} 
+  font-weight: bold;
+}
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: darkslategrey;
+  background-color: darkgreen;
 }
 
 li {
   float: left;
+  font-family: Arial, Helvetica, sans-serif
 }
 li a:hover {
   background-color: Cornsilk;
 }
 
 p {
-	padding: 10px 50px 10px 50px;
-	font-family: Arial, sans-serif;
-	font-size: 18px;
+  padding: 10px 50px 10px 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+h3 {
+  color: darkgreen;
+  font-size: 20px;
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ol {
+  margin: 35px;
+  line-height: 1.2;
+  font-size: 18px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #003300;
+  color: cornsilk;
+  text-align: center;
+}
+p.photo {
+	 margin-bottom: 100px;
 }
