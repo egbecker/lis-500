@@ -1,5 +1,8 @@
 body {
   background-color: #CCFFFF;
+  margin: 0;
+  padding: 0;
+  height: 100%;	
 }
 
 header {
@@ -75,13 +78,20 @@ ol {
 
 footer {
   position: fixed;
+  padding-top: 2px;	
   left: 0;
   bottom: 0;
   width: 100%;
+  clear: both;	
   background-color: #003300;
   color: cornsilk;
   text-align: center;
+  overflow: auto;	
 }
 p.photo {
 	 margin-bottom: 100px;
+}
+.spacer {
+	margin-bottom: 110px;
+	visibility: hidden:
 }
