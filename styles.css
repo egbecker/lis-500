@@ -15,7 +15,7 @@ h1 {
   border-bottom-style: solid;
   border-left-style: none;
   padding: 5px;
-  font-family: Arial, sans-serif;
+  font-family: Impact, Haettenschweiler;
 }
 
 h2 {
@@ -71,6 +71,7 @@ ol {
   margin: 35px;
   line-height: 1.2;
   font-size: 18px;
+  font-weight: bold;
 }
 
 footer {
