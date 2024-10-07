@@ -43,7 +43,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color:darkgreen;
+  background-image: url("https://static01.nyt.com/images/2023/06/05/opinion/02Manjoo-1/02Manjoo-1-articleLarge.jpg?quality=75&auto=webp&disable=upscale");
 }
 
 li {
@@ -91,6 +91,9 @@ footer {
 	 color: cornsilk;
 }
 
-div {
-  padding:50px;
+
+.center {
+  margin: auto;
+  width: 25%;
+  padding: 10px;
 }
