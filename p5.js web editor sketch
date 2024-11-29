@@ -1,0 +1,55 @@
+// Add some header info
+// For TM template code
+
+// Video
+let video;
+
+// STEP 1: Load the model!
+function preload() {
+  classifier = m15.soundClassifier('model-link-here');
+}
+
+function setup() {
+  createCanvas(640, 520);
+  
+
+  // STEP 2: Start classifying
+  classifyAudio();
+}
+
+// STEP 2 classify!
+function classifyAudio() {
+  classifier.classify(gotResults);
+  
+function draw() {
+  background(0);
+}
+
+  // STEP 4: Draw the label
+  // textSize(32);
+  textAlign(CENTER, CENTER);
+  // fill(255);
+  // text(label, width/2, height - 16);
+
+  
+ let emoji = '🎧';
+ if (label == 'Guitar') {
+    let emoji = '🎸';
+}   else if (label == 'Drum') {
+    emoji = '🥁';
+}   else if (label == 'Piano') {  
+    emoji = '🎹';
+}
+
+  textSize(256);
+  text(emoji, width/2, height/2);
+}
+
+// STEP 3: Get the classification!
+function gotResults(error, results) {
+  if (error) {
+    console.error(error);
+    return;
+  }
+  label = results[0].label;
+}
