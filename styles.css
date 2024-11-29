@@ -1,8 +1,5 @@
 body {
-  background-color: #CCFFFF;
-  margin: 0;
-  padding: 0;
-  height: 100%;	
+  background-color: #d5ffff;
 }
 
 header {
@@ -18,7 +15,7 @@ h1 {
   border-bottom-style: solid;
   border-left-style: none;
   padding: 5px;
-  font-family: Arial, sans-serif;
+  font-family: Impact, Haettenschweiler;
 }
 
 h2 {
@@ -46,7 +43,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: darkgreen;
+  background-image: url("https://static01.nyt.com/images/2023/06/05/opinion/02Manjoo-1/02Manjoo-1-articleLarge.jpg?quality=75&auto=webp&disable=upscale");
 }
 
 li {
@@ -74,24 +71,30 @@ ol {
   margin: 35px;
   line-height: 1.2;
   font-size: 18px;
+  font-weight: bold;
 }
 
 footer {
   position: fixed;
-  padding-top: 2px;	
   left: 0;
   bottom: 0;
   width: 100%;
-  clear: both;	
-  background-color: #003300;
+  background-color: darkgreen;
   color: cornsilk;
   text-align: center;
-  overflow: auto;	
 }
-p.photo {
+
+.photo {
 	 margin-bottom: 100px;
 }
-.spacer {
-	margin-bottom: 110px;
-	visibility: hidden:
+
+.cornsilk {
+	 color: cornsilk;
+}
+
+
+.center {
+  margin: auto;
+  width: 25%;
+  padding: 10px;
 }
