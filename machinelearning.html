@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <title>Machine Learning</title>
         <link rel="stylesheet" href="styles.css" />
+   		<script src="https://lis500-egbecker.ischool.wisc.edu/p5.js"></script>
     </head>
     <body>
         <header>
@@ -193,7 +194,7 @@
 <p><em>&ldquo;</em><em>In my work, I use the coded gaze term as a reminder that the machines we build reflect the priorities, preferences, and even prejudices of those who have the power to shape technology. The coded gaze does not have to be explicit to do the job of oppression. Like systemic forms of oppression, including patriarchy and white supremacy, it is programmed into the fabric of society. Without intervention, those who have held power in the past continue to pass that power to those who are most like them. This does not have to be intentional to have a negative impact. The task ahead of me was to see if I could find compelling evidence showing the coded gaze at work.&rdquo;</em></p>
 <p>
 Joy Buolamwimi<em>, Unmasking AI: My Mission to Protect What is Human in a World of Machines</em>
-</p>
+</p>https://lis500-egbecker.ischool.wisc.edu/p5.js
 <p>In <em>Unmasking AI, </em>Dr. Joy Buolamwimi exposes and dissects the inherent bias found within the algorithms and data collection methodologies that power much of the AI that is currently being used for commercial and governmental applications.&nbsp; She is first exposed to the coded gaze when working on a graduate school project that requires her to employ code used for existing facial recognition systems. The system does not recognize her dark complexion as a face, and she is forced to use a white Halloween mask to use and test her project.&nbsp; Digging deeper, she uncovers that the datasets that the AI has learned from reflect the biases of its creators.&nbsp; As she unpacks this, it is discovered that this is a consistent problem across most of the machine learning systems in use.&nbsp; Throughout the book, Dr. Buolamwimi works tirelessly to expose the potential dangers it poses to underrepresented groups, particularly women and people of color.&nbsp;</p>
 <p>In chapter 16 of the book, entitled <em>BROOKLYN TENANTS, </em>Dr. Buolamwimi is recruited to assist a legal team that represents the residents of Atlantic Towers, a Brooklyn, NY apartment complex.&nbsp; The management company that operates the building is planning on replacing the existing keyless fob entry system with a facial recognition entry system created by a company called StoneLock. The system uses the heatmap of an individual&rsquo;s face to allow entry to the building. The firm claims that it does not differentiate the gender, sex, or color of the person trying to enter the building because it &ldquo;merely reads data points on a person&rsquo;s face and assigns a number.&rdquo; The legal team asks Dr. Buolamwimi how this system may infringe on the rights of the tenants of Atlantic Towers, and possibly create difficulty accessing their homes.</p>
 <p>The tenants had not agreed to having their faces used for biometric entry prior to moving into Atlantic Towers. They had no way of ensuring that their biometric data wasn&rsquo;t being sold or turned over to law enforcement. Dr. Buolamwimi&rsquo;s work had already exposed the lack of biometric information available about women of color, and that population was the large majority of tenants; &ldquo;The vast majority of the tenants belonged to one or more of the groups that have the highest failures in the U.S government-sponsored studies [<em>sic</em>] &hellip; that examined the accuracy of facial recognition technologies.&rdquo;</p>
@@ -204,64 +205,6 @@ Joy Buolamwimi<em>, Unmasking AI: My Mission to Protect What is Human in a World
         <h1>Our Teachable Machine</h1>
         <h2>Our Trained Audio Model</h2>
         <p>Our audio model identifies pitch! Please allow our webpage to have microphone permissions to see the model in action.</p>
- 		<div>Teachable Machine Audio Model</div>
-<button type="button" onclick="init()">Start</button>
-<div id="label-container"></div>
-<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/speech-commands@0.4.0/dist/speech-commands.min.js"></script>
-
-<script type="text/javascript">
-    // more documentation available at
-    // https://github.com/tensorflow/tfjs-models/tree/master/speech-commands
-
-    // the link to your model provided by Teachable Machine export panel
-    const URL = "./my_model/";
-
-    async function createModel() {
-        const checkpointURL = URL + "model.json"; // model topology
-        const metadataURL = URL + "metadata.json"; // model metadata
-
-        const recognizer = speechCommands.create(
-            "BROWSER_FFT", // fourier transform type, not useful to change
-            undefined, // speech commands vocabulary feature, not useful for your models
-            checkpointURL,
-            metadataURL);
-
-        // check that model and metadata are loaded via HTTPS requests.
-        await recognizer.ensureModelLoaded();
-
-        return recognizer;
-    }
-
-    async function init() {
-        const recognizer = await createModel();
-        const classLabels = recognizer.wordLabels(); // get class labels
-        const labelContainer = document.getElementById("label-container");
-        for (let i = 0; i < classLabels.length; i++) {
-            labelContainer.appendChild(document.createElement("div"));
-        }
-
-        // listen() takes two arguments:
-        // 1. A callback function that is invoked anytime a word is recognized.
-        // 2. A configuration object with adjustable fields
-        recognizer.listen(result => {
-            const scores = result.scores; // probability of prediction for each class
-            // render the probability scores per class
-            for (let i = 0; i < classLabels.length; i++) {
-                const classPrediction = classLabels[i] + ": " + result.scores[i].toFixed(2);
-                labelContainer.childNodes[i].innerHTML = classPrediction;
-            }
-        }, {
-            includeSpectrogram: true, // in case listen should return result.spectrogram
-            probabilityThreshold: 0.75,
-            invokeCallbackOnNoiseAndUnknown: true,
-            overlapFactor: 0.50 // probably want between 0.5 and 0.75. More info in README
-        });
-
-        // Stop the recognition in 5 seconds.
-        // setTimeout(() => recognizer.stopListening(), 5000);
-    }
-</script>
-
+ 		<iframe src="/home/lis500-egbecker/public_html/sketch.js" width="600px" height="400px"></iframe>
     </body>
 </html>
