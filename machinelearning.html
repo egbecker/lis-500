@@ -132,7 +132,7 @@
         </p>
         <h2>David's Statement</h2>
         <p><strong>All 12 Notes but no Color; Employing Google&rsquo;s Teachable Machine with Musical Datasets</strong></p>
-<p>We programmed our teachable machine to identify the 12 chromatic pitches of Western music. Play, sing, or whistle a note into your microphone and the machine will correctly identify it.&nbsp; When asked to perform higher-level musical analysis, the recognition of chordal quality, the machine failed. The journey to create this teachable machine was interesting and exposed some truths about my biases and those inherent in the machine. Through this process, understanding how the various problematic and harmful examples of AI algorithms and datasets presented in Joy Buolamwimi&rsquo;s <em>Unmasking AI </em>so easily found their way into common use. As Buolamwimi herself relates, &ldquo;as a computer scientist, I was trained to focus on the technical, not the ethical.&rdquo; The lack of ethical considerations is only compounded by the pressures of the competitive rush to be first in research and the marketplace.</p>
+<p>We programmed our teachable machine to identify the 12 chromatic pitches of Western music. Play, sing, or whistle a note into your microphone and the machine will correctly identify it; When asked to perform higher-level musical analysis, the recognition of chordal quality, the machine failed. The journey to create this teachable machine was interesting and exposed some truths about my biases and those inherent in the machine. Through this process, understanding how the various problematic and harmful examples of AI algorithms and datasets presented in Joy Buolamwimi&rsquo;s <em>Unmasking AI </em>so easily found their way into common use. As Buolamwimi herself relates, &ldquo;as a computer scientist, I was trained to focus on the technical, not the ethical.&rdquo; The lack of ethical considerations is only compounded by the pressures of the competitive rush to be first in research and the marketplace.</p>
 <p>&nbsp;</p>
 <p><strong>Music Theory Background Information</strong></p>
 <p>Our original plan was not to create a machine that identified single pitches accurately, but one that could identify the quality of the 4 types of chords most commonly found in Jazz/ Black American Music; Major 7, minor 7, Dominant 7, and Minor 7 flat 5 chords. Unlike isolated individual pitches, each of these chord types has a distinct sound that most students of contemporary music can identify without other contextual clues. &nbsp;Chordal quality is an important aspect of both <a href="https://iastate.pressbooks.pub/comprehensivemusicianship/chapter/6-1-diatonic-harmony-tutorial/">functional</a> and <a href="https://www.berklee.edu/berklee-today/fall-1999/Nonfunctional-Harmony">non-functional</a> harmony and is often compared to the use of color in the visual arts.&nbsp; It is determined by the intervallic relationships between the four notes of the various types of seventh chords. These notes are the first, third, fifth, and seventh scale degrees. For example, here are all the notes of the C major scale:</p>
@@ -143,7 +143,7 @@
 <p>G to B, Major third</p>
 <p>We can create a chord starting from each note of the same scale, and get at least one of each of our 4 chord types from any major scale. For example, if we arrange all the notes of the C Major scale to start on D, we get the following:</p>
 <p>D, E, F, G, A, B, C</p>
-<p>This is considered to be the mode of D Dorian, and from it we can derive a D Minor 7 chord, using the notes D, F, A, and C.&nbsp; The intervals between these chord tones are as follows:</p>
+<p>This is considered to be the mode of D Dorian, and from it we can derive a D Minor 7 chord, using the notes D, F, A, and C; The intervals between these chord tones are as follows:</p>
 <p>D to F, Minor third</p>
 <p>F to A, Minor Third</p>
 <p>A to C, Minor Third</p>
@@ -165,13 +165,13 @@
 <p><strong>Data sample creation process</strong></p>
 <p><strong>Pt 1: The Chord Quality Machine</strong></p>
 <p>Operating from the perspective of a human musician who does not have perfect pitch I thought that building a machine that could learn what different chord qualities sound like and identify them would be relatively easy.&nbsp; Using my vibraphone, audio interface, and one Blue Bottle microphone, I was ready to capture some audio samples. I decided to put some basic parameters in place to build the initial data set. I went through several unsuccessful iterations, below are the parameters for the final version I created:</p>
-<ol>
+<<ol>
 <li>I created 5 classes for the Teachable Machine; the 4 types of chords and a background noise class.</li>
 <li>I recorded all 4 types of chords in root position (1,3,5,7 chord spelling) in all 12 keys. I decided not to record other common voicings of these chords or add harmonic tensions, even though in actual musical practice these would be commonplace.&nbsp; I was determined to get the machine to first recognize these basic versions of the chords, and then add those variations later if it was successful.</li>
 <li>Each chord was played by me on the vibraphone and recorded with the sustain pedal suppressed, allowing the chord to ring out. I recorded each chord for 8 seconds, which in turn were broken up into 8, 1 second samples. This results in a total of 384 samples in total.</li>
 <li>The datasets were fed through the teachable machine for 300 epochs</li>
 </ol>
-<p> </p>
+<br>
 <p>Unfortunately, the machine misidentified the chord qualities nearly every time.&nbsp;</p>
 <p><strong>A Theory on Why the Chord Quality Identifier Failed</strong></p>
 <p>&nbsp;My faulty assumption was that the aspects of aural training that humans find easiest to master would be the same ones that the machine could easily identify.&nbsp; This thesis proved incorrect. The teachable machine is powered by transfer learning, and built on<a href="https://github.com/tensorflow/tfjs-models/tree/master/speech-commands"> Speech Command Recognizer.</a> This model is built upon TensorFlow.js, and was designed specifically for simple speech recognition tasks:</p>
@@ -186,7 +186,7 @@
 <li>Each note was played by me on the vibraphone and recorded with the sustain pedal suppressed, allowing it to ring out. I recorded each chord for 8 seconds, which in turn were broken up into 8, 1 second samples. This means there is a total of 296, 1-second samples.</li>
 <li>The datasets were fed through the teachable machine for 100 epochs</li>
 </ol>
-<p> </p>
+<br>
 <p><strong>A note on pitch and tuning:</strong>&nbsp; this machine, being based on the well-tempered system that all keyboard instruments are tuned to, does not account for the slight differences in pitch that a vocal or string ensemble would employ.&nbsp; For example, on a keyboard, the notes Bb and A# are enharmonically the same but will be slightly different than each other when performed by a vocal ensemble.&nbsp; For more on this please visit the Wikipedia article about musical temperament <a href="https://en.wikipedia.org/wiki/Musical_temperament">here</a>.</p>
 <p>&nbsp;</p>
 <p><strong>The Coded Gaze</strong></p>
