@@ -165,7 +165,7 @@
 <p><strong>Data sample creation process</strong></p>
 <p><strong>Pt 1: The Chord Quality Machine</strong></p>
 <p>Operating from the perspective of a human musician who does not have perfect pitch I thought that building a machine that could learn what different chord qualities sound like and identify them would be relatively easy.&nbsp; Using my vibraphone, audio interface, and one Blue Bottle microphone, I was ready to capture some audio samples. I decided to put some basic parameters in place to build the initial data set. I went through several unsuccessful iterations, below are the parameters for the final version I created:</p>
-<<ol>
+<ol>
 <li>I created 5 classes for the Teachable Machine; the 4 types of chords and a background noise class.</li>
 <li>I recorded all 4 types of chords in root position (1,3,5,7 chord spelling) in all 12 keys. I decided not to record other common voicings of these chords or add harmonic tensions, even though in actual musical practice these would be commonplace.&nbsp; I was determined to get the machine to first recognize these basic versions of the chords, and then add those variations later if it was successful.</li>
 <li>Each chord was played by me on the vibraphone and recorded with the sustain pedal suppressed, allowing the chord to ring out. I recorded each chord for 8 seconds, which in turn were broken up into 8, 1 second samples. This results in a total of 384 samples in total.</li>
@@ -187,7 +187,7 @@
 <li>The datasets were fed through the teachable machine for 100 epochs</li>
 </ol>
 <br>
-<p><strong>A note on pitch and tuning:</strong>&nbsp; this machine, being based on the well-tempered system that all keyboard instruments are tuned to, does not account for the slight differences in pitch that a vocal or string ensemble would employ.&nbsp; For example, on a keyboard, the notes Bb and A# are enharmonically the same but will be slightly different than each other when performed by a vocal ensemble.&nbsp; For more on this please visit the Wikipedia article about musical temperament <a href="https://en.wikipedia.org/wiki/Musical_temperament">here</a>.</p>
+<p><strong>A note on pitch and tuning:</strong>; this machine, being based on the well-tempered system that all keyboard instruments are tuned to, does not account for the slight differences in pitch that a vocal or string ensemble would employ.&nbsp; For example, on a keyboard, the notes Bb and A# are enharmonically the same but will be slightly different than each other when performed by a vocal ensemble.&nbsp; For more on this please visit the Wikipedia article about musical temperament <a href="https://en.wikipedia.org/wiki/Musical_temperament">here</a>.</p>
 <p>&nbsp;</p>
 <p><strong>The Coded Gaze</strong></p>
 <p><em>&ldquo;</em><em>In my work, I use the coded gaze term as a reminder that the machines we build reflect the priorities, preferences, and even prejudices of those who have the power to shape technology. The coded gaze does not have to be explicit to do the job of oppression. Like systemic forms of oppression, including patriarchy and white supremacy, it is programmed into the fabric of society. Without intervention, those who have held power in the past continue to pass that power to those who are most like them. This does not have to be intentional to have a negative impact. The task ahead of me was to see if I could find compelling evidence showing the coded gaze at work.&rdquo;</em></p>
