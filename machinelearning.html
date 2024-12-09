@@ -46,92 +46,60 @@
         <h1>Our Project Statements</h1>
         <h2>Liz's Statement</h2>
         <p>
-            Machine learning, a rapidly advancing branch of artificial intelligence, has captured the imagination of
-            technologists and the general public alike. However, the foundational concepts behind AI can often seem out
-            of reach for those without a technical background. Google's Teachable Machines platform bridges this gap,
-            empowering anyone with basic web development skills and a creative mindset to understand and experiment with
-            machine learning. For this project, we embarked on a journey to design and implement a machine learning
-            algorithm, integrate it into a functional webpage, and critically reflect on our work's ethical and societal
-            implications, inspired by Joy Buolamwini's <i>Unmasking AI</i>.
+            When David and I set out to build a machine learning model using Google's Teachable Machine, we immediately
+            had a clear vision: to teach a computer how to recognize common jazz chords like Major 7, Minor 7, Dominant
+            7, and Minor 7♭5. As two music enthusiasts (I have a 6+ year choral background, which is very meager in
+            comparison to David's experience with music), this seemed like a perfect blend of our passions. However, we
+            quickly learned that teaching a model is much more complex than it looks—and much more rewarding when things
+            finally work.
         </p>
         <p>
-            This project was not just about theory; it was about hands-on experimentation and practical learning. By
-            following the structured tutorial provided by Teachable Machines, David and I gained the practical skills to
-            create and deploy an algorithm capable of classifying images or recognizing voices. We started by training
-            the algorithm using a custom dataset. Using a simple webcam setup, we captured examples of the categories we
-            wanted the machine to distinguish, ensuring the dataset was varied enough to provide robust training while
-            remaining manageable within the constraints of the project. After training the model, we exported it and
-            integrated it into a custom webpage using HTML, CSS, and JavaScript. Our completed webpage serves as both a
-            demonstration of the algorithm in action and a reflection of our learning journey. Visitors to the page can
-            interact with the trained model and observe how it classifies inputs in real-time. We embedded a video
-            showcasing the algorithm's development and operation to complement this interactive element.
+            Our original goal of chord recognition proved unexpectedly challenging. Teachable Machine could only handle
+            one label at a time, while chords combine multiple pitches. After several troubleshooting and data
+            collection rounds, we realized there were better goals than this. Instead of giving up, we pivoted and
+            decided to teach the model something more feasible: recognizing the 12 notes of the chromatic scale.
         </p>
         <p>
-            As we worked through this project, the critical themes in <i>Unmasking AI</i> provided a vital lens for
-            evaluating our work. Buolamwini's emphasis on bias in AI systems was particularly resonant. No matter how
-            advanced, machine learning models are only as unbiased as the data they are trained on. Datasets can
-            inadvertently reflect the prejudices and inequalities of the natural world, leading to algorithms that
-            perpetuate these issues. This awareness led us to evaluate the dataset we created carefully. We aimed to
-            include many examples to ensure the model was as inclusive and representative as possible. However, we
-            recognized that true inclusivity requires ongoing vigilance, feedback, and refinement, emphasizing the
-            importance of iterative development in AI design.
+            David recorded audio samples of each note, adjusting for different tones, dynamics, and playing styles.
+            After training the model with these sounds, we watched in amazement as it correctly identified pitches in
+            real time. This success felt incredibly satisfying after the struggles we had faced earlier. The experience
+            taught us that model development is more about adapting to limitations than technical know-how. This
+            adaptability in the face of challenges should inspire you to stay resilient and determined in your own
+            projects.
         </p>
         <p>
-            Buolamwini's call for ethical responsibility in AI development also prompted us to reflect on the broader
-            implications of our work. While this project is a relatively small-scale exercise, it mirrors the challenges
-            of larger AI systems deployed worldwide. For example, even though our algorithm operates in a controlled
-            environment, questions about its potential misuse, limitations, and design assumptions remained central to
-            our discussions. These reflections deepened our understanding of the need for transparency and
-            accountability in AI development, reassuring us and the audience of the responsible future of technology.
+            One of the most valuable lessons came from reflecting on how we built our dataset. After trying several
+            times to figure out what audio would be the best to train our model on, we realized our initial dataset was
+            too narrow. We expanded it by adding more samples and recording in different environments. This process of
+            data expansion was crucial, as it helped us appreciate the complexity of training even simple models and the
+            importance of data diversity in machine learning.
         </p>
         <p>
-            The collaborative nature of this project added another layer of richness to the experience. Working as a
-            group required us to navigate different perspectives, skills, and approaches to problem-solving. Both David
-            and I brought unique strengths, from technical proficiency in coding to creative ideas for presenting the
-            project on the webpage. This diversity of thought enhanced the quality of our work and mirrored the
-            multidisciplinary approach that successful AI development often requires. Our collaboration underscored the
-            importance of communication, adaptability, and shared responsibility, all essential skills in both academic
-            and professional contexts.
+            While this project focused on music and sparked deeper discussions about AI's broader impact, Joy
+            Buolamwini's <i>Unmasking AI</i> opened my eyes to how machine learning can perpetuate bias if not designed
+            carefully. Though our project did not involve sensitive data, we still thought critically about fairness and
+            accuracy. How do our choices when creating datasets shape what AI can and cannot do? This question became
+            central as we refined our project and considered how transparency could benefit future developers.
         </p>
         <p>
-            Another significant aspect of this project was the integration of creativity with technical implementation.
-            Designing the algorithm and building the webpage required analytical thinking and artistic expression.
-            Decisions about the webpage's layout, color scheme, and user experience were just as important as the
-            technical accuracy of the algorithm itself. This interplay between creativity and technology highlighted the
-            potential for AI to be a tool for solving problems and enabling new forms of artistic and cultural
-            expression.
+            Our project was a genuine team effort. Combining musical knowledge, coding skills, and a shared interest in
+            design, we built a working webpage where users could test the model. The site's look and functionality
+            mattered as much as its technical performance. We wanted visitors to understand and enjoy what the model was
+            doing, so we embedded interactive demos and created a user-friendly layout. This collaborative effort was
+            key to our project's success and should remind you of the value of teamwork in your own endeavors.
         </p>
         <p>
-            This project was not just about our own learning and development; it was also about contributing to the
-            broader community of learners and developers. By uploading our code to GitHub and documenting our process,
-            we made a significant contribution to the open-source ecosystem. Our work is now available for others to
-            learn from and build upon, aligning with the ethos of transparency and collaboration that Buolamwini
-            advocates for. This project is a testament to our belief that AI development should be inclusive and
-            participatory.
+            Looking back, we learned that machine learning is accessible but far from simple. It is a continuous cycle
+            of testing, learning from failure, and improving. The technical work was rewarding, but the more significant
+            takeaway was realizing how machine learning projects connect creativity, ethics, and collaboration. Every
+            dataset, design choice, and piece of feedback shaped our project in unexpected ways.
         </p>
         <p>
-            The final stages of the project, including soliciting feedback and making iterative improvements,
-            underscored the value of continual learning and refinement. Feedback from peers and instructors provided
-            fresh perspectives on our work, revealing blind spots we had overlooked and suggesting ways to enhance the
-            project's functionality and presentation. These iterative cycles of development and critique mirrored the
-            real-world processes of AI research and development, where no system is ever truly finished, and improvement
-            is a constant goal. This commitment to improvement should motivate and inspire all of us in the field of AI.
-        </p>
-        <p>
-            In reflecting on the entire experience, several vital lessons emerge. First, machine learning is more opaque
-            than it often seems; with the right tools and guidance, anyone can understand and experiment with it.
-            Second, creating and deploying an algorithm is more about ethical considerations than technical precision.
-            Buolamwini's work reminded us that every choice we make in designing an AI system carries implications for
-            its fairness, inclusivity, and impact on society. Finally, this project's collaborative and creative aspects
-            underscored the importance of bringing diverse perspectives and disciplines together to tackle complex
-            challenges.
-        </p>
-        <p>
-            This project represents a convergence of technical skills, ethical inquiry, and creative exploration. It is
-            a testament to the power of accessible tools like Teachable Machines to democratize AI and empower
-            individuals to engage with technology in meaningful ways. As we move forward, the lessons learned from this
-            project will continue to inform our approach to AI, reminding us of the importance of curiosity,
-            responsibility, and collaboration in shaping the future of technology.
+            As we move forward, we will carry these lessons with us in future AI projects and how we think about
+            technology's role in the world. AI is not just about building intelligent machines but about making
+            thoughtful, transparent, and creative choices that push the limits of what is possible. This project
+            reminded us that success in AI comes not just from technical skills but curiosity, adaptability, and a
+            willingness to learn from every unexpected challenge.
         </p>
         <h2>David's Statement</h2>
         <p><strong>All 12 Notes but no Color; Employing Google&rsquo;s Teachable Machine with Musical Datasets</strong></p>
